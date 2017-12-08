@@ -11,10 +11,12 @@ int EnterNum();
 int IfStatements();
 int loops();
 int mult(int x, int y);
+int Switches();
 
 int main(){
 	HelloWorld();
 	loops();
+	Switches();
 }
 
 int HelloWorld(){
@@ -48,4 +50,21 @@ int loops(){
 int mult(int x, int y){
 	int answer = x*y;
 	return answer;
+}
+
+int Switches(){
+	int a;
+	for (a = 0; a<10; a++){
+		switch(a){
+					case 1:
+						printf("a is 1");
+						break;
+					case 2:
+						printf("a is 2");
+						break;
+					default:
+						printf("a is %d", a);
+						break;
+		}
+	}
 }
