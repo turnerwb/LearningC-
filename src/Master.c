@@ -12,11 +12,10 @@ int IfStatements();
 int loops();
 int mult(int x, int y);
 int Switches();
+int Pointers();
 
 int main(){
-	HelloWorld();
-	loops();
-	Switches();
+	Pointers();
 }
 
 int HelloWorld(){
@@ -65,6 +64,17 @@ int Switches(){
 					default:
 						printf("a is %d", a);
 						break;
+	return 0;
 		}
 	}
+}
+
+int Pointers(){
+	int x = 15;
+	int *p;
+	p = &x;
+
+	//printf(p);
+	printf("%d", *p);
+	return 0;
 }
